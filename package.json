@@ -38,19 +38,14 @@
       "./setupTests.js"
     ],
     "collectCoverageFrom": [
-      "**/*.{js,jsx}",
+      "*/*.{js,jsx}",
       "!**/config/**",
       "!**/middlewares/**",
       "!**/controllers/**",
       "!**/migrations/**",
       "!**/models/**",
-      "!**/routes/**",
-      "!**/external/**",
-      "!**/fixtures/**",
-      "!**/lcov-report/**",
-      "!**/node_modules/**",
-      "!**/.eslintrc.js/**",
-      "!**/server.js/**"
+      "!**/routes/**"
+  
     ]
   }
 }

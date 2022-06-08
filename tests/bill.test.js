@@ -50,7 +50,7 @@ describe("Test the root path", () => {
       .expect(200)
       .then((response) => {
         expect(response.body).toContainEqual({
-          id: "47qAXb6fIm2zOKkLzMrb",
+          id: "47qAXb6fIm2zOKkLzMro",
           vat: "80",
           status: "pending",
           type: "bill type",
@@ -59,10 +59,10 @@ describe("Test the root path", () => {
           fileName: "file-path/filename.jpg",
           fileUrl: "http://localhost:5678/null",
           date: "2004-04-04",
-          amount: 300,
+          amount: 400,
           commentAdmin: "ok",
           pct: 20,
-          email: "john-wick@domain.tld",
+          email: "john-doe@domain.tld",
         });
       });
   });
@@ -142,8 +142,8 @@ describe("Test the root path", () => {
       .then((response) => {
         expect(response.body).toMatchObject({
           name: 'bill-name',
-          fileName: false,
-          filePath: false,
+          fileName: 'null',
+          filePath: 'null',
         });
       });
   });
