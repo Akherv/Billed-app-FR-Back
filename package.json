@@ -45,7 +45,6 @@
       "!**/migrations/**",
       "!**/models/**",
       "!**/routes/**"
-  
     ]
   }
 }
